@@ -11,6 +11,8 @@ public class JetPlane extends Aircraft {
 
     @Override
     public void updateConditions() {
+
+        System.out.println(this.getClass().getName());
         this.coordinates = null;
     }
 

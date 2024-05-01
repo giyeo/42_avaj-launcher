@@ -16,7 +16,13 @@ public class Aircraft extends Flyable {
 
     @Override
     public void updateConditions() {
+        System.out.println(this.getClass().getName());
+    }
+
+    protected void setDimensions(Coordinates newCoordinates) {
 
     }
+
+
 
 }

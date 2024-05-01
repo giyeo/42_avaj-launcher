@@ -11,7 +11,7 @@ public class Helicopter extends Aircraft {
 
     @Override
     public void updateConditions() {
-        this.coordinates = null;
+        System.out.println(this.getClass().getName() + " " + this.id);
     }
 
 }

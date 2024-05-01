@@ -2,6 +2,7 @@ package com.java.aircraft.models;
 
 import com.java.aircraft.Aircraft;
 import com.java.Coordinates;
+import com.java.aircraft.AircraftFactory;
 
 public class Baloon extends Aircraft {
 
@@ -11,6 +12,7 @@ public class Baloon extends Aircraft {
 
     @Override
     public void updateConditions() {
+        System.out.println(this.getClass().getName());
         this.coordinates = null;
     }
 

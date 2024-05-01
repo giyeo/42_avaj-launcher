@@ -8,15 +8,15 @@ public class WeatherProvider {
     private static WeatherProvider instance;
     private final String[] weather;
 
-    private WeatherProvider() {
-        weather = new String[] {"RAIN", "FOG", "SUN", "SNOW"};
-    }
-
     public static WeatherProvider getInstance() {
         if (instance == null) {
             instance = new WeatherProvider();
         }
         return instance;
+    }
+
+    private WeatherProvider() {
+        weather = new String[] {"RAIN", "FOG", "SUN", "SNOW"};
     }
 
     public String getCurrentWeather(Coordinates p_coordinates) {

@@ -11,15 +11,15 @@ public class Coordinates {
         this.height = p_height;
     }
 
-    int getLongitude() {
+    public int getLongitude() {
         return this.longitude;
     };
 
-    int getLatitude() {
+    public int getLatitude() {
         return this.latitude;
     };
 
-    int getHeight() {
+    public int getHeight() {
         return this.height;
     };
 
